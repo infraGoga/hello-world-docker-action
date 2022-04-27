@@ -23,6 +23,7 @@ jobs:
           node-version: '16'
       - run: npm install
       - run: npx semantic-release
+      - run: npm install @semantic-release/git @semantic-release/changelog -D
       - run: npm run build-admin
       - name: Build image
         run: |
